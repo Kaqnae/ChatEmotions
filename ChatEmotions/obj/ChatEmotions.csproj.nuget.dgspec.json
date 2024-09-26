@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\au1wp\\Source\\Repos\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj": {}
+    "C:\\C#\\Code\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\au1wp\\Source\\Repos\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj": {
+    "C:\\C#\\Code\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\au1wp\\Source\\Repos\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj",
+        "projectUniqueName": "C:\\C#\\Code\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj",
         "projectName": "ChatEmotions",
-        "projectPath": "C:\\Users\\au1wp\\Source\\Repos\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj",
+        "projectPath": "C:\\C#\\Code\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj",
         "packagesPath": "C:\\Users\\au1wp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\au1wp\\Source\\Repos\\ChatAssignment\\ChatEmotions\\obj\\",
+        "outputPath": "C:\\C#\\Code\\ChatAssignment\\ChatEmotions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\au1wp\\AppData\\Roaming\\NuGet\\NuGet.Config",
