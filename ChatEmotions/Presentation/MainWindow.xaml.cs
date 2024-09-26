@@ -3,7 +3,7 @@ using ChatEmotions.Domain;
 using ChatEmotions.InterfaceAdapter;
 using ChatEmotions.Presentation.ViewModels;
 
-namespace ChatEmotions.Presentation.Views;
+namespace ChatEmotions.Presentation;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
