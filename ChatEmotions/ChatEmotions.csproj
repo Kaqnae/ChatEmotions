@@ -11,6 +11,7 @@
     <ItemGroup>
       <Folder Include="ApplicationFolder\" />
       <Folder Include="Infrastructure\" />
+      <Folder Include="Presentation\Views\" />
     </ItemGroup>
 
     <ItemGroup>

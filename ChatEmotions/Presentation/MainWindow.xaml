@@ -20,28 +20,23 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="10,10,10,10">
-                <ComboBox Width="200" Height="25">
-                    <ComboBoxItem Content="option 1"/>
-                    <ComboBoxItem Content="option 2"/>
-                    <ComboBoxItem Content="option 3"/>
-                    <ComboBoxItem Content="option 4"/>
-                </ComboBox>
+                <ComboBox Width="200" Height="25" ItemsSource="{Binding EmotionsList}" SelectedItem="{Binding SelectedEmotion}"/>
                 <Button Height="25" Width="100" Content="Show"/>
             </StackPanel>
             <StackPanel Grid.Column="2" Orientation="Horizontal" Margin="10,10,10,10">
-                <TextBox Height="25" Width="200" Text="Search Word"/>
-                <Button Height="25" Width="100" Content="Search"/>
+                <TextBox Height="25" Width="200" Text="{Binding SearchText}"/>
+                <Button Height="25" Width="100" Content="Search" Command="{Binding SearchCommand}"/>
             </StackPanel>
         </Grid>
-        <ListView Grid.Row="1">
+        <ListView Grid.Row="1" ItemsSource="{Binding MsgCollection}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Messages"/>
+                    <GridViewColumn Header="Messages" DisplayMemberBinding="{Binding Content}"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <StackPanel Grid.Row="2" HorizontalAlignment="Right">
-            <Button Height="25" Width="100" Margin="0,0,10,10" Content="Remove"/>
+            <Button Height="25" Width="100" Margin="0,0,10,10" Content="Remove" Command="{Binding RemoveCommand}"/>
         </StackPanel>
     </Grid>
 </Window>
