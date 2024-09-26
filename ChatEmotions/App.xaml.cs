@@ -9,4 +9,5 @@ namespace ChatEmotions;
 /// </summary>
 public partial class App : Application
 {
+    //test test
 }
