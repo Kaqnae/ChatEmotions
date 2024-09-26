@@ -1,0 +1,35 @@
+Prompt til 'happy' beskeder:
+Generate 20 chat messages that express happiness and joy. Format the output in XML with the following structure:
+<messages>
+    <message>[Message]</message>
+</messages>
+Make sure the messages are positive and upbeat.
+
+Prompt til 'sad' beskeder:
+Generate 20 chat messages that express sadness or disappointment. Format the output in XML with the following structure:
+<messages>
+    <message>[Message]</message>
+</messages>
+Make sure the messages convey feelings of sadness or loss.
+
+Prompt til 'neutral' beskeder:
+Generate 20 chat messages that are emotionally neutral and objective. Format the output in XML with the following structure:
+<messages>
+    <message>[Message]</message>
+</messages>
+Ensure the messages do not express strong emotions and remain factual.
+
+
+Prompt til 'depressed' beskeder:
+Generate 20 chat messages that express deep sadness or depression. Format the output in XML with the following structure:
+<messages>
+    <message>[Message]</message>
+</messages>
+Make sure the messages reflect feelings of hopelessness and low energy.
+
+Prompt til 'anxious' beskeder:
+Generate 20 chat messages that express anxiety or worry. Format the output in XML with the following structure:
+<messages>
+    <message>[Message]</message>
+</messages>
+Make sure the messages reflect nervousness, fear, or stress.

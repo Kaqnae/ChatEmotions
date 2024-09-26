@@ -1,0 +1,23 @@
+<!DOCTYPE messages SYSTEM "Messages.dtd">
+<messages>
+    <message>It looks like it might rain later today.</message>
+    <message>I'm going to the grocery store later.</message>
+    <message>It’s almost time for lunch.</message>
+    <message>I finished my work for the day.</message>
+    <message>I’ve got a meeting scheduled for tomorrow.</message>
+    <message>It's a typical Tuesday for me.</message>
+    <message>The traffic was pretty normal this morning.</message>
+    <message>I’ve been catching up on some tasks today.</message>
+    <message>I had some coffee earlier.</message>
+    <message>The news seems pretty routine today.</message>
+    <message>It’s been a regular day so far.</message>
+    <message>Work went smoothly as expected.</message>
+    <message>I'll check my emails after lunch.</message>
+    <message>Nothing out of the ordinary happened today.</message>
+    <message>We have a project deadline next week.</message>
+    <message>I completed the report as planned.</message>
+    <message>It’s just another day at the office.</message>
+    <message>The weather is pretty mild today.</message>
+    <message>I’ll probably go for a walk after dinner.</message>
+    <message>Not much has changed recently.</message>
+</messages>

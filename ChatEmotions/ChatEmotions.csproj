@@ -10,10 +10,7 @@
 
     <ItemGroup>
       <Folder Include="ApplicationFolder\" />
-      <Folder Include="Domain\" />
       <Folder Include="Infrastructure\" />
-      <Folder Include="InterfaceAdapter\" />
-      <Folder Include="Persistence\" />
     </ItemGroup>
 
     <ItemGroup>
