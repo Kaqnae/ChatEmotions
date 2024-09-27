@@ -1,16 +1,23 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows.Input;
 using ChatEmotions.Domain;
+using ChatEmotions.InterfaceAdapter;
 using ChatEmotions.Presentation.Commands;
+using ChatEmotions.UseCases;
 
 namespace ChatEmotions.Presentation.ViewModels;
 
 public class MsgViewModel : Bindable
 {
+    public ICommand ShowMessagesCommand { get; }
+    
     public ICommand SearchCommand { get; }
     public ICommand RemoveCommand { get; }
     
+    private GetChat _getChat;
+    
     private ObservableCollection<MsgCollection> _msgCollection;
+    
     public ObservableCollection<MsgCollection> MsgCollection
     {
         get => _msgCollection;
@@ -44,15 +51,31 @@ public class MsgViewModel : Bindable
         }
     }
 
-    public MsgViewModel()
+    public MsgViewModel(IXMLReader<MsgCollection> msgCollection)
     {
         this.SearchCommand = new RelayCommand(SearchMessages, CanSearchMessages);
         this.RemoveCommand = new RelayCommand(RemoveMessages, CanRemoveMessages);
+        this.ShowMessagesCommand = new RelayCommand(ShowMessages, CanShowMessages);
+        this._getChat = new GetChat(msgCollection);
+        this._msgCollection = new ObservableCollection<MsgCollection>();
+        
+    }
+
+    private void ShowMessages()
+    {
+
+        this._msgCollection = _getChat.Action(_selectedEmotion);
+        Console.WriteLine("Success");
+    }
+
+    private bool CanShowMessages()
+    {
+        return _selectedEmotion != null;
     }
 
     private void SearchMessages()
     {
-        //implementation
+        
     }
 
     private bool CanSearchMessages()
