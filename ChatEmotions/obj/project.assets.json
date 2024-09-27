@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Ronnie\\.nuget\\packages\\": {}
+    "C:\\Users\\au1wp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ronnie\\RiderProjects\\ChatEmotions\\ChatEmotions\\ChatEmotions.csproj",
+      "projectUniqueName": "C:\\C#\\Code\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj",
       "projectName": "ChatEmotions",
-      "projectPath": "C:\\Users\\Ronnie\\RiderProjects\\ChatEmotions\\ChatEmotions\\ChatEmotions.csproj",
-      "packagesPath": "C:\\Users\\Ronnie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ronnie\\RiderProjects\\ChatEmotions\\ChatEmotions\\obj\\",
+      "projectPath": "C:\\C#\\Code\\ChatAssignment\\ChatEmotions\\ChatEmotions.csproj",
+      "packagesPath": "C:\\Users\\au1wp\\.nuget\\packages\\",
+      "outputPath": "C:\\C#\\Code\\ChatAssignment\\ChatEmotions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ronnie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\au1wp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

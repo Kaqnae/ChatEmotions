@@ -28,7 +28,7 @@
                 <Button Height="25" Width="100" Content="Search" Command="{Binding SearchCommand}"/>
             </StackPanel>
         </Grid>
-        <ListView Grid.Row="1" ItemsSource="{Binding MsgCollection}">
+        <ListView Grid.Row="1" ItemsSource="{Binding MsgCollection}" SelectedItem="{Binding SelectedMsg}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Messages" DisplayMemberBinding="{Binding Content}"/>
