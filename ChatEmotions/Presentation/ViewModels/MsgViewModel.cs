@@ -16,6 +16,7 @@ public class MsgViewModel : Bindable
     
     private GetChat _getChat;
     private UpdateChat _updateChat;
+    private SearchChat _searchChat;
     
     private ObservableCollection<MsgCollection> _msgCollection;
     
@@ -74,6 +75,7 @@ public class MsgViewModel : Bindable
         
         this._getChat = new GetChat(msgReader);
         this._updateChat = new UpdateChat(msgReader);
+        this._searchChat = new SearchChat(msgReader);
     }
 
     private void ShowMessages()
@@ -89,7 +91,8 @@ public class MsgViewModel : Bindable
 
     private void SearchMessages()
     {
-        
+        this.MsgCollection.Clear();
+        this.MsgCollection = _searchChat.Action(_searchText);
     }
 
     private bool CanSearchMessages()

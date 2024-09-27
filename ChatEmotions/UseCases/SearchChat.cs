@@ -24,14 +24,13 @@ public class SearchChat
         foreach (var msg in allChatMsg)
         {
 
-            if (msg.Content == searchText)
+            if (msg.Content.Contains(searchText))
             {
                 result.Add(msg);
             }
-
-            return result;
         }
         
+        return result;
     }
 
 
