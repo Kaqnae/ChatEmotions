@@ -40,8 +40,8 @@ public class XMLAdapter : IXMLReader<MsgCollection>
         return messageCollection;
     }
 
-    public void Update(ObservableCollection<MsgCollection> input)
+    public void Update(ObservableCollection<MsgCollection> input, Enum emotion)
     {
-        throw new NotImplementedException();
+        
     }
 }
