@@ -45,11 +45,9 @@ C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\bin\Debug\net8.0-window
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\bin\Debug\net8.0-windows\ChatEmotions.runtimeconfig.json
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\bin\Debug\net8.0-windows\ChatEmotions.dll
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\bin\Debug\net8.0-windows\ChatEmotions.pdb
-C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\Presentation\MainWindow.g.cs
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\ChatEmotions_MarkupCompile.cache
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\ChatEmotions_MarkupCompile.lref
-C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\Presentation\MainWindow.baml
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\ChatEmotions.g.resources
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\ChatEmotions.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\ChatEmotions.AssemblyInfoInputs.cache
@@ -61,3 +59,5 @@ C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-window
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\ChatEmotions.pdb
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\ChatEmotions.genruntimeconfig.cache
 C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\ref\ChatEmotions.dll
+C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\Presentation\Views\MainWindow.g.cs
+C:\Users\Noah\Documents\GitHub\ChatEmotions\ChatEmotions\obj\Debug\net8.0-windows\Presentation\Views\MainWindow.baml
