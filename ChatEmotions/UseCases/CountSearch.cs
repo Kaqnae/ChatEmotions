@@ -35,7 +35,7 @@ public class CountSearch
                 {
                     count++;
                 }
-                emotionWordCount.Add(chat.Key, count);
+                emotionWordCount[chat.Key] = count;
             }
         }
         KeyValuePair<Emotions, int> result = emotionWordCount.OrderByDescending(x => x.Value).First();

@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Input;
 using ChatEmotions.Domain;
 using ChatEmotions.InterfaceAdapter;
@@ -17,6 +18,7 @@ public class MsgViewModel : Bindable
     private GetChat _getChat;
     private UpdateChat _updateChat;
     private SearchChat _searchChat;
+    private CountSearch _countSearch;
     
     private ObservableCollection<MsgCollection> _msgCollection;
     
@@ -76,6 +78,7 @@ public class MsgViewModel : Bindable
         this._getChat = new GetChat(msgReader);
         this._updateChat = new UpdateChat(msgReader);
         this._searchChat = new SearchChat(msgReader);
+        this._countSearch = new CountSearch(msgReader);
     }
 
     private void ShowMessages()
@@ -93,6 +96,12 @@ public class MsgViewModel : Bindable
     {
         this.MsgCollection.Clear();
         this.MsgCollection = _searchChat.Action(_searchText);
+        //KeyValuePair<Emotions, int> searchResult = _countSearch.Action(_searchText);
+        
+        //MessageBox.Show($"{_searchText} Appears: {searchResult.Value} times in {searchResult.Key}");
+
+
+
     }
 
     private bool CanSearchMessages()
