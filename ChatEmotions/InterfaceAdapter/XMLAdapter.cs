@@ -14,21 +14,30 @@ public class XMLAdapter : IXMLReader<MsgCollection>
     
     public ObservableCollection<MsgCollection> Read(Enum emotion)
     {
-        filePath = $"{filePath}{emotion}.xml";
-        XElement xml = XElement.Load(filePath);
+        string xfilePath = $"{filePath}{emotion}.xml";
+        XElement xml = XElement.Load(xfilePath);
         var messages = (from msg in xml.Elements("message") select new MsgCollection(msg.Value)).ToList();
 
         foreach (var message in messages)
         {
             messageCollection.Add(message);
-            Console.WriteLine(message);
+            //Console.WriteLine(message);
         }
         return messageCollection;
     }
 
     public ObservableCollection<MsgCollection> ReadAll()
     {
-        throw new NotImplementedException();
+        int numOfFiles = Directory.GetFiles(filePath).Length;
+        Console.WriteLine($"number of files: {numOfFiles}");
+        
+        
+        for (int i = 0; i < numOfFiles; i++)
+        {
+            Read((Emotions)i);
+        }
+        Console.WriteLine(messageCollection.Count);
+        return messageCollection;
     }
 
     public void Update(MsgCollection input)
