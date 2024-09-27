@@ -63,9 +63,8 @@ public class MsgViewModel : Bindable
 
     private void ShowMessages()
     {
-
+        this.MsgCollection.Clear();
         this.MsgCollection = _getChat.Action(_selectedEmotion);
-        Console.WriteLine("Success");
     }
 
     private bool CanShowMessages()
