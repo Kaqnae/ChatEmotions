@@ -2,8 +2,8 @@
 
 public enum Emotions
 {
-    Happy,
-    Sad,
+    Happy = 0,
+    Sad = 1,
     Neutral,
     Depressed,
     Anxious

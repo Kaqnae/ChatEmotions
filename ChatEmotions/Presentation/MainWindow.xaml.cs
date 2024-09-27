@@ -15,6 +15,9 @@ public partial class MainWindow : Window
         InitializeComponent();
         //XMLAdapter xmlAdapter = new XMLAdapter();
         //xmlAdapter.Read(Emotions.Happy);
+        //xmlAdapter.ReadAll();
+        
+        
 
         DataContext = new MsgViewModel();
         //hej noah
