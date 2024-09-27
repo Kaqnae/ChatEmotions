@@ -5,6 +5,6 @@ namespace ChatEmotions.InterfaceAdapter;
 public interface IXMLReader<T>
 {
     ObservableCollection<T> Read(Enum emotion);
-    List<T> ReadAll();
+    ObservableCollection<T> ReadAll();
     void Update(T input);
 }

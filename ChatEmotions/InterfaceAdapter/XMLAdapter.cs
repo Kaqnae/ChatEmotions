@@ -9,12 +9,12 @@ namespace ChatEmotions.InterfaceAdapter;
 public class XMLAdapter : IXMLReader<MsgCollection>
 {
 
-    private string filePath = "C:\\Users\\Ronnie\\RiderProjects\\ChatEmotions\\ChatEmotions\\Persistence\\XML files";
+    private string filePath = @"..\..\..\Persistence\XML files\";
     private ObservableCollection<MsgCollection> messageCollection = new ObservableCollection<MsgCollection>(); 
     
     public ObservableCollection<MsgCollection> Read(Enum emotion)
     {
-        filePath = $"{filePath}\\{emotion}.xml";
+        filePath = $"{filePath}{emotion}.xml";
         XElement xml = XElement.Load(filePath);
         var messages = (from msg in xml.Elements("message") select new MsgCollection(msg.Value)).ToList();
 
@@ -26,7 +26,7 @@ public class XMLAdapter : IXMLReader<MsgCollection>
         return messageCollection;
     }
 
-    public List<MsgCollection> ReadAll()
+    public ObservableCollection<MsgCollection> ReadAll()
     {
         throw new NotImplementedException();
     }
