@@ -6,5 +6,5 @@ public interface IXMLReader<T>
 {
     ObservableCollection<T> Read(Enum emotion);
     ObservableCollection<T> ReadAll();
-    void Update(T input);
+    void Update(ObservableCollection<T> input);
 }

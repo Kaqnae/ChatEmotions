@@ -40,7 +40,7 @@ public class XMLAdapter : IXMLReader<MsgCollection>
         return messageCollection;
     }
 
-    public void Update(MsgCollection input)
+    public void Update(ObservableCollection<MsgCollection> input)
     {
         throw new NotImplementedException();
     }
