@@ -14,34 +14,32 @@ public class CountSearch
         this._reader = reader;
     }
 
-    public KeyValuePair<Emotions, int> Action(string searchText)
+    public KeyValuePair<string, int> Action(string searchText)
     {
-     
-        Dictionary<Emotions, ObservableCollection<MsgCollection>> chatMsgCollections = new();
-        Dictionary<Emotions, int> emotionWordCount = new();
+        _reader.ClearCollection();
+        int finalCount = 0;
+        string emotion = "";
 
         for (int i = 0; i < 4; i++)
         {
-            chatMsgCollections.Add((Emotions)i, _reader.Read((Emotions)i));
-        }
+            _reader.ClearCollection();
+            ObservableCollection<MsgCollection> msgCollection = _reader.Read((Emotions)i);
+            int count = 0;
 
-        foreach (var chat in chatMsgCollections)
-        {
-            foreach (var msg in chat.Value)
+            foreach (var msg in msgCollection)
             {
-                int count = 0;
-                
                 if (msg.Content.Contains(searchText))
                 {
                     count++;
                 }
-                emotionWordCount[chat.Key] = count;
+            }
+            
+            if (count > finalCount)
+            {
+                emotion = (Emotions)i + "";
+                finalCount = count;
             }
         }
-        KeyValuePair<Emotions, int> result = emotionWordCount.OrderByDescending(x => x.Value).First();
-        
-        return result;
+        return new KeyValuePair<string, int>(emotion, finalCount);
     }
-
-
 }

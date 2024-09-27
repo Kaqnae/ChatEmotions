@@ -19,6 +19,8 @@ public class MsgViewModel : Bindable
     private UpdateChat _updateChat;
     private SearchChat _searchChat;
     private CountSearch _countSearch;
+
+    private bool editable = false;
     
     private ObservableCollection<MsgCollection> _msgCollection;
     
@@ -82,9 +84,10 @@ public class MsgViewModel : Bindable
     }
 
     private void ShowMessages()
-    {
+    { 
         this.MsgCollection.Clear();
         this.MsgCollection = _getChat.Action(_selectedEmotion);
+        this.editable = true;
     }
 
     private bool CanShowMessages()
@@ -96,12 +99,9 @@ public class MsgViewModel : Bindable
     {
         this.MsgCollection.Clear();
         this.MsgCollection = _searchChat.Action(_searchText);
-        //KeyValuePair<Emotions, int> searchResult = _countSearch.Action(_searchText);
-        
-        //MessageBox.Show($"{_searchText} Appears: {searchResult.Value} times in {searchResult.Key}");
-
-
-
+        KeyValuePair<string, int> searchResult = _countSearch.Action(_searchText);
+        MessageBox.Show($"{_searchText} Appears: {searchResult.Value} times in {searchResult.Key}");
+        this.editable = false;
     }
 
     private bool CanSearchMessages()
@@ -117,6 +117,7 @@ public class MsgViewModel : Bindable
 
     private bool CanRemoveMessages()
     {
-        return _selectedEmotion != null;
+        return _selectedEmotion != null &&
+               editable == true;
     }
 }

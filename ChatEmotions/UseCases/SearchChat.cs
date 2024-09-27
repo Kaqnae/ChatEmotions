@@ -17,6 +17,7 @@ public class SearchChat
 
     public ObservableCollection<MsgCollection> Action(string searchText)
     {
+        _reader.ClearCollection();
         ObservableCollection<MsgCollection> result = new();
 
         ObservableCollection<MsgCollection> allChatMsg = _reader.ReadAll();

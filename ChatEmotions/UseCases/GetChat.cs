@@ -16,6 +16,7 @@ public class GetChat
 
     public ObservableCollection<MsgCollection> Action(Emotions emotions)
     {
+        _msgs.ClearCollection();
         return _msgs.Read(emotions);
     }
 

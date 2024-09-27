@@ -27,6 +27,7 @@ public class XMLAdapter : IXMLReader<MsgCollection>
 
     public ObservableCollection<MsgCollection> ReadAll()
     {
+        ClearCollection();
         int numOfFiles = Directory.GetFiles(filePath).Length;
         
         for (int i = 0; i < numOfFiles; i++)
@@ -45,5 +46,10 @@ public class XMLAdapter : IXMLReader<MsgCollection>
             from message in input
             select new XElement("message", message.Content));
         xml.Save(xfilePath);
+    }
+
+    public void ClearCollection()
+    {
+        this.messageCollection = new ObservableCollection<MsgCollection>();
     }
 }
