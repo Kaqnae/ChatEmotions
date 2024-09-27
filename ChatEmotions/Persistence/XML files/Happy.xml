@@ -1,23 +1,23 @@
-<!DOCTYPE messages SYSTEM "Messages.dtd">
+﻿<?xml version="1.0" encoding="utf-8"?>
 <messages>
-    <message>Hey there! I'm feeling fantastic today!</message>
-    <message>I just got promoted at work! Couldn't be happier!</message>
-    <message>Life's been so good lately!</message>
-    <message>I’m so excited for the weekend!</message>
-    <message>Everything’s going my way!</message>
-    <message>I just finished a great book, and I feel inspired!</message>
-    <message>It's a beautiful day outside, and I’m loving it!</message>
-    <message>I got a surprise gift today, and it made my day!</message>
-    <message>I’m so grateful for my friends and family!</message>
-    <message>Just had the best meal ever with my favorite people!</message>
-    <message>I’m smiling from ear to ear right now!</message>
-    <message>Just aced that exam, feeling super proud!</message>
-    <message>I’m bursting with energy today!</message>
-    <message>I can’t stop smiling; today’s been perfect!</message>
-    <message>I love how everything is falling into place!</message>
-    <message>I’ve never felt so confident and happy before!</message>
-    <message>Just had the most amazing conversation with a friend!</message>
-    <message>Feeling truly blessed today!</message>
-    <message>Sunshine and good vibes all day long!</message>
-    <message>I feel like I can take on anything today!</message>
+  <message>Hey there! I'm feeling fantastic today!</message>
+  <message>I just got promoted at work! Couldn't be happier!</message>
+  <message>Life's been so good lately!</message>
+  <message>I’m so excited for the weekend!</message>
+  <message>Everything’s going my way!</message>
+  <message>I just finished a great book, and I feel inspired!</message>
+  <message>It's a beautiful day outside, and I’m loving it!</message>
+  <message>I got a surprise gift today, and it made my day!</message>
+  <message>I’m so grateful for my friends and family!</message>
+  <message>Just had the best meal ever with my favorite people!</message>
+  <message>I’m smiling from ear to ear right now!</message>
+  <message>Just aced that exam, feeling super proud!</message>
+  <message>I’m bursting with energy today!</message>
+  <message>I can’t stop smiling; today’s been perfect!</message>
+  <message>I love how everything is falling into place!</message>
+  <message>I’ve never felt so confident and happy before!</message>
+  <message>Just had the most amazing conversation with a friend!</message>
+  <message>Feeling truly blessed today!</message>
+  <message>Sunshine and good vibes all day long!</message>
+  <message>I feel like I can take on anything today!</message>
 </messages>

@@ -13,13 +13,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        //XMLAdapter xmlAdapter = new XMLAdapter();
-        //xmlAdapter.Read(Emotions.Happy);
-        //xmlAdapter.ReadAll();
         
-        
-
         DataContext = new MsgViewModel(new XMLAdapter());
-        //hej noah
     }
 }

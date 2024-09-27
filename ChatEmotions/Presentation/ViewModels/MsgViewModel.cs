@@ -15,6 +15,7 @@ public class MsgViewModel : Bindable
     public ICommand RemoveCommand { get; }
     
     private GetChat _getChat;
+    private UpdateChat _updateChat;
     
     private ObservableCollection<MsgCollection> _msgCollection;
     
@@ -24,6 +25,18 @@ public class MsgViewModel : Bindable
         set
         {
             _msgCollection = value;
+            OnPropertyChanged();
+        }
+    }
+    
+    private MsgCollection _selectedMsg;
+
+    public MsgCollection SelectedMsg
+    {
+        get => _selectedMsg;
+        set
+        {
+            _selectedMsg = value;
             OnPropertyChanged();
         }
     }
@@ -51,14 +64,16 @@ public class MsgViewModel : Bindable
         }
     }
 
-    public MsgViewModel(IXMLReader<MsgCollection> msgCollection)
+    public MsgViewModel(IXMLReader<MsgCollection> msgReader)
     {
         this.SearchCommand = new RelayCommand(SearchMessages, CanSearchMessages);
         this.RemoveCommand = new RelayCommand(RemoveMessages, CanRemoveMessages);
         this.ShowMessagesCommand = new RelayCommand(ShowMessages, CanShowMessages);
-        this._getChat = new GetChat(msgCollection);
+        
         this._msgCollection = new ObservableCollection<MsgCollection>();
         
+        this._getChat = new GetChat(msgReader);
+        this._updateChat = new UpdateChat(msgReader);
     }
 
     private void ShowMessages()
@@ -84,12 +99,12 @@ public class MsgViewModel : Bindable
 
     private void RemoveMessages()
     {
-        //implementation
+        this._msgCollection.Remove(_selectedMsg);
+        this._updateChat.Action(_msgCollection, _selectedEmotion);
     }
 
     private bool CanRemoveMessages()
     {
-        return true;
-        //need new implementation
+        return _selectedEmotion != null;
     }
 }
