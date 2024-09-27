@@ -9,7 +9,7 @@ namespace ChatEmotions.InterfaceAdapter;
 public class XMLAdapter : IXMLReader<MsgCollection>
 {
 
-    private string filePath = "C:\\Users\\Ronnie\\RiderProjects\\ChatEmotions\\ChatEmotions\\Persistence\\XML files";
+    private string filePath = @"..\..\..\Persistence\XML files\";
     private ObservableCollection<MsgCollection> messageCollection = new ObservableCollection<MsgCollection>(); 
     
     public ObservableCollection<MsgCollection> Read(Enum emotion)
